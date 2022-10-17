@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Icono Pagina-->
+    <link rel="icon" href="Img/Krusty-Krab-PNG-Pic.png" />
+    <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/dc50344c01.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Crustaceo Cascarudo</title>
+  </head>
+
+  <body>
+    <!-----Inicio del Navbar----->
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-gradient">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="Img/Krusty-Krab-PNG-Pic.png"
+                alt="logo"
+                width="250"
+                class="logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler bg-warning"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                    aria-current="page"
+                    href="login.html"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="d-none" id="linkAdmin" href="administrar.html"
+                    >Administracion</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                    href="carrito.html"
+                    >Carrito</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light text-uppercase fw-bolder mx-2"
+                    href="nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>                
+              </ul>
+
+              <a
+                type="button"
+                class="btn btn-dark d-none text-white"
+                id="userBtn"
+                href="login.html"
+              ></a>
+              <button type="button" class="btn btn-dark d-none" id="exitBtn">
+                <i class="fas fa-sign-in-alt"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="container d-none d-md-block">
+          <div class="row col-md-6">
+            <h1 class="mt-5 my-4 mx-5">
+              <span class="text-warning fw-bolder"> Crustaceo Cascarudo</span>
+            </h1>
+            <p class="text-white fw-bolder span">
+              <span class="span fw-bolder">
+                Si no te gustaron te mandamos a
+                <span class="text-bg-warning rounded">Bob Sponja</span> que te
+                cocine en tu casa</span
+              >
+            </p>
+          </div>
+          <form action="" class="text-white fw-bolder span text-left">
+            Obtene tus Descuentos >
+            <a href="/login.html" class="btn btn-warning mb-4 btn-lg mt-3"
+              >Suscribete</a
+            >
+          </form>
+        </div>
+      </div>
+    </header>
+    <section>
+      <!-- Inicio boton-carrito-compras -->
+    <button class="btn-Carrito-Compras d-none d-xl-block "><a href="./carrito.html" ><i class="fa-solid fa-cart-shopping"></i></a></button>
+          <!-- Fin boton-carrito-compras -->
+
+      <div class="container">
+        <h2 class="m-4 text-center bg-light">Catalogo de Productos</h2>
+        <div
+          id="catalogo"
+          class="row row-col-sm-1 row-col-md-2 row-col-lg-3 row-col-xl-4"
+        >
+
+
+          
+        </div>
+      </div>
+    </section>
+    <footer
+      class="mt-4 container-fluid bg-dark text-white-50 justify-content-evenly py-1"
+    >
+      <div class="container">
+        <section class="row">
+          <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+            <h4>Navegación</h4>
+            <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html">Seguridad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html"
+                  >Politica de privacidad</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+            <h4 class="font">Store</h4>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white-50" href="/404.html"
+                  >Locales</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html"
+                  >Financiamiento</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html"
+                  >Estado de orden</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html"
+                  >Franquicias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="/404.html"
+                  >Terminos y condiciones</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+            <h4>Metodos de pago</h4>
+            <img
+              src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-paypal.png?1619113824"
+              width="100px"
+              alt="Metodos de pago"
+            />
+            <img
+              src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-visa.png?1619113824"
+              width="100px"
+              alt="Metodos de pago"
+            />
+            <img
+              src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-master.png?1619113824"
+              width="100px"
+              alt="Metodos de pago"
+            />
+            <img
+              src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-american.png?1619113824"
+              width="100px"
+              alt="Metodos de pago"
+            />
+          </article>
+          <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+            <h4>Seguinos</h4>
+            <a
+              class="btn btn-dark my-2>"
+              href="https://www.instagram.com/accounts/login/?"
+              ><i class="fab fa-instagram fa-3x"></i
+            ></a>
+            <a class="btn btn-dark my-2" href="https://www.facebook.com/login/"
+              ><i class="fab fa-facebook-square fa-3x"></i
+            ></a>
+          </article>
+        </section>
+      </div>
+      <p class="text-center">
+        Fuerzas Gyniu &copy; Todos los derechos reservados
+      </p>
+    </footer>
+
+    <!--Link JavaScript-->
+    <script src="./JavaScript/app.js"></script>
+    <script src="./JavaScript/SesionIndex.js"></script>
+    <!-- Js de SweetAler -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Link Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

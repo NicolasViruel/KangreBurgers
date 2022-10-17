@@ -1,0 +1,88 @@
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(211, 248, 3, 0.957), rgba(215, 245, 40, 0.7));
+}
+    /*---- Inicio del Header---- */
+header{
+    background-image:linear-gradient(to right, rgba(45, 43, 43, 0.7), rgba(0, 0, 0, 0.7)), url("/Img/imagenHeader.jpg");
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;
+}
+header .navbar-nav a:hover{
+    background-color: rgb(186, 173, 31);
+    border-radius: 8px;
+}
+#userBtn{
+    font-weight: bolder;
+}
+#exitBtn{
+    font-weight: bolder;
+}
+#userBtn:hover{
+    background-color: rgb(186, 173, 31);
+    border-radius: 8px;
+}
+#exitBtn:hover{
+    background-color: rgb(186, 173, 31);
+    border-radius: 8px;
+}
+    /*---- Fin del Header---- */
+
+    /*---- Animacion de las Card---- */
+.descripcion{
+    height: 25px;
+    overflow: hidden;
+    transition: heigth 3s ease-in .3s;
+}
+.descripcion:hover{
+    height: 80px;
+}
+    /*---- Fin de las Animaciones---- */
+
+    /* aqui inicimos el boton flotante */
+.btn-Carrito-Compras{
+    
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    bottom: 320px;
+    right: 50px;
+    background:rgb(186, 199, 5);    
+    /* background-color:rgba(9, 9, 9, 0.985); */
+    border-radius: 100%;
+    border-color: black;
+    text-align: center;
+    font-size: 35px;
+    z-index: 60;
+    transition: ease 0.9s;
+    animation: efecto 1.9s infinite;
+
+}
+
+.btn-Carrito-Compras :hover{
+    transform: scale(1.1);
+
+    transition: 0.3s;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);    
+
+}
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(48, 69, 4, 0.7);
+    }
+}
+/* resize formulario textarea */
+#inputDescripcion {
+      resize:none;    
+    
+}

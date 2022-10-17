@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Icono Pagina-->
+  <link rel="icon" href="Img/Krusty-Krab-PNG-Pic.png">
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/dc50344c01.js" crossorigin="anonymous"></script>
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Link CSS -->
+  <link rel="stylesheet" href="Css/style.css">
+  <title>Crustaceo Cascarudo</title>
+</head>
+
+<body>
+
+  <!-----Inicio del Navbar----->
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-gradient">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/Img/Krusty-Krab-PNG-Pic.png" alt="logo" width="250" class="logo">
+          </a>
+          <button class="navbar-toggler text-bg-warning" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                  aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="d-none" id="linkAdmin" href="administrar.html"
+                  >Administracion</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-light text-decoration-none text-uppercase fw-bolder mx-2"
+                  href="carrito.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light text-uppercase fw-bolder mx-2" href="nosotros.html">Nosotros</a>
+              </li>              
+            </ul>
+            <!-- Estos botones son necesarios para la sesion -->
+            <a
+            type="button"
+            class="btn btn-dark d-none text-white"
+            id="userBtn"
+            href="login.html"
+          ></a>
+          <button type="button" class="btn btn-dark d-none" id="exitBtn">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+          </div>
+        </div>
+      </nav>
+      <div class="container d-none d-md-block">
+        <div class="row col-md-6 ">
+          <h1 class="mt-5 my-4 mx-5"><span class="text-warning fw-bolder"> Crustaceo Cascarudo</span></h1>
+          <p class="text-white fw-bolder span "><span class="span fw-bolder"> Si no te gustaron te mandamos a <span
+                class="text-bg-warning rounded">Bob Sponja</span> que te cocine en tu casa</span></p>
+        </div>
+        <form action="" class="text-white fw-bolder span text-left">Obtene tus Descuentos
+          >
+          <a href="/login.html" class="btn btn-warning mb-4 btn-lg mt-3">Suscribete</a>
+
+        </form>
+
+      </div>
+    </div>
+  </header>
+
+  <h1 class=" text-center my-2">Administrar Productos</h1>
+  <main class="container-fluid row m-0">
+    <!-- Formulario -->
+    <section class="my-5 col m-0">
+      <hr>
+      <h4 class="my-3 text-center">Crear Nuevo Producto</h4>
+      <hr>
+      <form id="form">
+        <div class="mb-3">
+          <label for="inputProducto" class="form-label">Producto</label>
+          <input type="text" class="form-control" id="inputProducto" placeholder="Producto">
+        </div>
+        <div class="mb-3">
+          <label for="inputCodigo" class="form-label">Codigo de Producto</label>
+          <input type="text" class="form-control" id="inputCodigo" placeholder="Codigo Generado por Sistema" disabled>
+        </div>
+        <div class="mb-3">
+          <label for="inputDescripcion" class="form-label">Descripcion</label>
+          <textarea class="form-control" id="inputDescripcion" rows="3" maxlength="250" minlength="4"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="inputPrecio" class="form-label">Precio</label>
+          <input type="text" class="form-control" id="inputPrecio" placeholder="Precio">
+        </div>
+        <div class="mb-3">
+          <label for="inputUrl" class="form-label">URL Imagen</label>
+          <input type="text" class="form-control" id="inputUrl" placeholder="http://example.com">
+        </div>
+        <div class="text-end w-50">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </section>
+    <!--Gifts-->
+    <section class="my-5 col-md-6 d-none d-md-block">
+      <div class=" d-none d-xl-block">
+        <div class="text-center"><img src="/Img/bobBajonero.gif"
+            alt="GIF: Bob Esponja montando una hamburguesa" class="img-rounded img-gif"></div>
+        <div class="v4dQwb text-center" jsname="P3Vluc" role="region"><a role="link" tabindex="0" rel="noopener"
+            target="_blank"
+            href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Far.pinterest.com%2Fpin%2F426856870908161778%2F&amp;psig=AOvVaw0tDdabDkFOGTZCIbpwH335&amp;ust=1665405054966000&amp;source=images&amp;cd=vfe&amp;ved=0CAwQjRxqFwoTCNjK1LmT0_oCFQAAAAAdAAAAABAE"
+            jsaction="focus:kvVbVb;mousedown:kvVbVb;touchstart:kvVbVb;" aria-label="Visit Pinterest" class="eHAdSb"
+            data-ved="0CAwQjRxqFwoTCNjK1LmT0_oCFQAAAAAdAAAAABAE" rlhc="1"><img
+              src="https://i.pinimg.com/originals/a2/14/b1/a214b1bf769c8b4fcb7528c8b441a232.gif" jsaction="load:XAeZkd;"
+              jsname="HiaYvf" class="n3VNCb KAlRDb" alt="haha us!! | Spongebob, Spongebob gif, Patrick star"
+              data-noaft="1" style="width: 450px; height: 229.5px; margin: 73.35px 0px;"><span class="VSIspc"
+              jsname="eQ3Oyb" style="margin: 73.35px 0px;"></span></a>
+          <div class="k7O2sd" jsname="KxWeif" style="display: none;"></div>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      </div>
+      <!-- Fin Caballito-->
+    </section>
+    <hr>
+    <!-- Listado de Productos -->
+    <section class="my-1">
+      <h2 class="m-4 text-center bg-light">Listado de Productos</h2>
+      <hr>
+      <div class="table-responsive">
+        <table class="table my-5 border-0">
+          <thead>
+            <tr>
+              <th scope="col">Codigo</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Url Imagen</th>
+              <th scope="col" class="text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="bodyListaProductos">
+            <!-- <tr> era el maquetado para ver que estaba bien y ahora lo comento
+                  <th>el Codigo</th>
+                  <th>el productos</th>
+                  <th>la Descripcion</th>
+                  <th>el Precio</th>
+                  <th>la Imagen</th>
+                  <th class="text-center">
+                    <button class="btn btn-primary my-1">Borrar</button>
+                    <button class="btn btn-warning my-1">Editar</button>
+                  </th>
+                </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+    <!-- Agregado de Articulos -->
+    <section class="my-5">
+      <article class="container my-5 justify-content-center contenedor">
+        <!-- <div class="card mx-3 my-3 p-3" style="width: 18rem;">
+          <img src="Img/Icono.png">
+          <div class="card-body">
+            <h5 class="card-title">titulo</h5>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+          </div> -->
+        </div>
+      </article>
+    </section>
+    <section class="container">
+      <hr>
+      <h2 class="m-4 text-center bg-light">Base de Usuarios:</h2>
+      <hr>
+      <div class="table-responsive">
+          <table class="table my-5 border-0">
+              <thead>
+                  <tr>
+                      <th scope="col"class="text-center">Usuario</th>
+                      <th scope="col"class="text-center">Email</th>
+                      <th scope="col"class="text-center">Password</th>                      
+                      <th scope="col"class="text-center">Acciones</th>                      
+                  </tr>
+              </thead>
+              <tbody id="ListaUsuarios">
+                  <tr>
+                      <th class="text-center">Admin</th>
+                      <th class="text-center">admin@admin.com</th>
+                      <th class="text-center">Admin1234</th>
+                      <th class="text-center">----</th>                                                                          
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <!-----Inicio del Footer----->
+  <footer class="mt-4 container-fluid bg-dark text-white-50 justify-content-evenly py-1">
+    <div class="container">
+      <section class="row">
+        <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+          <h4>Navegación</h4>
+          <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Soporte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Seguridad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Politica de privacidad</a>
+            </li>
+          </ul>
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+          <h4 class="font">Store</h4>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white-50" href="/404.html">Locales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Financiamiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Estado de orden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Franquicias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="/404.html">Terminos y condiciones</a>
+            </li>
+          </ul>
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+          <h4>Metodos de pago</h4>
+          <img src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-paypal.png?1619113824" width="100px"
+            alt="Metodos de pago" />
+          <img src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-visa.png?1619113824" width="100px"
+            alt="Metodos de pago" />
+          <img src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-master.png?1619113824" width="100px"
+            alt="Metodos de pago" />
+          <img src="https://assets.jumpseller.com/store/bootstrap/themes/382017/pay-american.png?1619113824"
+            width="100px" alt="Metodos de pago" />
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-3 mb-3">
+          <h4>Seguinos</h4>
+          <a class="btn btn-dark my-2>" href="https://www.instagram.com/accounts/login/?"><i
+              class="fab fa-instagram fa-3x"></i></a>
+          <a class="btn btn-dark my-2" href="https://www.facebook.com/login/"><i
+              class="fab fa-facebook-square fa-3x"></i></a>
+        </article>
+      </section>
+    </div>
+    <p class="text-center">
+      Fuerzas Gyniu &copy; Todos los derechos reservados
+    </p>
+  </footer>
+
+  <!--Link JavaScript-->
+  <script src="JavaScript/administrador.js"></script>
+<!-- js que marca el usuario activo -->
+  <script src="./JavaScript/SesionIndex.js"></script>
+
+  <!--Link Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
