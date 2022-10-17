@@ -30,6 +30,8 @@ function renderCarrito() {
     tr.querySelector(".eliminar").addEventListener("click", () =>
       borrarProducto(item.title)
     );
+    //llamo al tr para sumar y restar la cantidad
+    tr.querySelector(".inputElemento").addEventListener('change', sumaCantidad);
   });
 }
 const borrarProducto = (codigo) => {
@@ -93,4 +95,18 @@ function estadoSesioncompra() {
       );
       window.location.replace(`https://mpago.la/25qvCuf`);
   }
+}
+//Funcion para sumar y restar la cantidad
+function sumaCantidad(e){
+  const sumaElemento = e.target
+  const tr = sumaElemento.closest('.itemCarrito') 
+  const  title = tr.querySelector('.titulo').textContent
+
+  carrito.forEach(item => {
+    if (item.title.trim() === title) {
+      sumaElemento.value < 1 ? (sumaElemento.value = 1) : sumaElemento.value;
+      item.cantidad = sumaElemento.value;
+      carritoTotal();
+    }
+  })
 }
