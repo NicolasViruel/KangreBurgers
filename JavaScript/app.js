@@ -1,19 +1,9 @@
-
-//creo variables
-const clickButton = document.querySelectorAll('.button') //selecciono todos los botones
-
-let listbutton = [];
-
-function updateListButton() {
-    listbutton = document.querySelectorAll('.button')
-}
-
 //cargo el localstorage de listaproductos para verificar si tengo algo
 let listaProductos =JSON.parse(localStorage.getItem('listaProductos')) || []
 let catalago = document.getElementById("catalogo")
 
 
-
+//creo 3 objetos para colocarlos de forma estatica y muestre como queda un producto cargado
 let product_1 ={
     producto: 'Sergio Burguer',
     codigo: '5241268963',
@@ -35,7 +25,7 @@ let product_3 ={
     descripcion: 'La especialidad de la Casa, Hamburguesa a base de carne de cangrejo de fonde de Bikini',
     precio: 950
 }
-
+//creo un array de los 3 productos fijos
 let muestrasFijas = [ product_1 , product_2, product_3 ]
 
 
@@ -56,7 +46,7 @@ function crearCard(producto) {
     `
 }
 
-//en esta parte es el if para que se agreguen las muestras si no hay nada
+//en esta parte es el if para que se agreguen las muestras si no hay nada en LS
 if (listaProductos.length === 0 ) {
     listaProductos = muestrasFijas
 }
